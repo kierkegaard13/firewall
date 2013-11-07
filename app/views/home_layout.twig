@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comsoc Testing</title>
+        <link rel="stylesheet" href="{{base}}/app/libraries/css/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        {% block styles %}{% endblock %}
+</head>
+<body>
+{% block header %}{% endblock %}
+<div id="body" style="margin:20px;">
+<nav class="navbar navbar-inverse">
+<ul class="nav navbar-nav">
+	<li><a href="{{base}}/public/home/">Home</a></li>
+</ul>
+</nav>
+{% block content %}{% endblock %}
+</div>
+<script type="text/javascript">
+	document.writeln("<script type='text/javascript' src='{{base}}/app/libraries/css/dist/js/bootstrap.min.js'><" + "/script>");
+</script>
+{% block scripts %}{% endblock %}
+</body>
+</html>
